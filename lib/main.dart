@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/igo',
       routes: {
         '/igo': (context) => const InitialScreen(),
-        // '/nico': (context) => const MyHomePage(title: 'Flutter Demo Home Page 2'),
+        '/nico': (context) => const InitialScreen(),
         // '/overview': (context) => const MyHomePage(title: 'Flutter Demo Home Page 3'),
       },
       title: 'Clube de Vantagens do Nico | Lelatrips',
