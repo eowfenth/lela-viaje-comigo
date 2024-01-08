@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_web_plugins/flutter_web_plugins.dart';
+import 'package:lelaviaje/screens/initial.dart';
 
 void main() {
+  setUrlStrategy(PathUrlStrategy());
   runApp(const MyApp());
 }
 
@@ -13,11 +16,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       initialRoute: '/igo',
       routes: {
-        '/igo': (context) => const MyHomePage(title: 'Flutter Demo Home Page 2'),
-        '/nico': (context) => const MyHomePage(title: 'Flutter Demo Home Page 2'),
-        '/overview': (context) => const MyHomePage(title: 'Flutter Demo Home Page 3'),
+        '/igo': (context) => const InitialScreen(),
+        // '/nico': (context) => const MyHomePage(title: 'Flutter Demo Home Page 2'),
+        // '/overview': (context) => const MyHomePage(title: 'Flutter Demo Home Page 3'),
       },
-      title: 'Flutter Demo',
+      title: 'Clube de Vantagens do Nico | Lelatrips',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -34,7 +37,8 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        // colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        fontFamily: 'Shadows',
         useMaterial3: true,
       ),
     );
